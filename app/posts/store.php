@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 require __DIR__.'/../autoload.php';
 
-// In this file we store/insert new posts in the database.
-
 if (isset($_POST['title']) && isset($_POST['link']) && isset($_POST['description'])) //isset is a function, so parenthases. If the username and password is set, it will continue, otherwise not.
 {
 
