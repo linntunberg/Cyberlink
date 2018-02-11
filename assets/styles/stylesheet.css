@@ -1,1 +1,57 @@
+#createaccount  {
+  font-family: helvetica;
+  background-color: white;
+  color: black;
+  padding: 0px;
+  margin-left: 300px;
+  width: 130px;
+  height: 40px;
+  font-size: 15px;
+  text-align: center;
+  position: inherit;
 
+
+}
+
+#login {
+  margin-left: 300px;
+  color: black;
+}
+
+h1 {
+  font-family: Helvetica;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+}
+
+#username {
+  font-family: Helvetica;
+  position:relative;
+}
+
+#logo {
+height: 90px;
+background-color: white;
+margin: center;
+
+}
+
+.links {
+  height: 50px;
+  color: black;
+
+
+}
+
+.container1 {
+  height: 100%;
+}
+
+p {
+    text-align: center;
+}
+
+body {
+  background-color: white;
+}
