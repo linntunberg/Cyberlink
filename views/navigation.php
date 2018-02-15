@@ -10,7 +10,9 @@
         </li><!-- /nav-item -->
 
 
-        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/profile.php">Profile</a>
+
             <li class="nav-item">
                 <a class="nav-link" href="/signup.php">Sign Up</a>
 
@@ -19,7 +21,7 @@
             <?php if (isset($_SESSION['user'])): ?>
                 <a class="nav-link" href="/app/auth/alogout.php">Logout</a>
             <?php else: ?>
-                <a class="nav-link>" href="login.php">Login</a>
+                <a class="nav-link" href="login.php">Login</a>
             <?php endif; ?>
 
         </li><!-- /nav-item -->

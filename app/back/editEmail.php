@@ -1,0 +1,13 @@
+<?php declare(strict_types=1);
+require __DIR__.'/../autoload.php';
+
+if(isset($_POST['email'])) {
+  $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+
+  $statement = $pdo->prepare('UPDATE users SET email =:email WHERE userID = :id');
+  $statement->bindParam(':id', $_SESSION['user']);
+  $statement->bindParam(':email', $email);
+  $statement->execute();
+
+redirect('../../profile.php');
+}
