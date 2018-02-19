@@ -14,10 +14,14 @@ redirect('../../profile.php');
 }
 
 if(isset($_POST['oldpassword']) && isset($_POST['newpassword']) && isset($_POST['repeatpassword'])) {
+      $getPassword = $pdo->prepare('SELECT * FROM user WHERE userId= :id');
+      $getPassword ->bindParam(':id', $_SESSION['userId']);
+      $getPassword->execute();
 
 if(password_verify(password, oldpassword)) {
 
 }
+
 
   $email = filter_var($_POST['password']);
 
