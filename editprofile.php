@@ -19,9 +19,9 @@ $user = $statement->fetch(PDO::FETCH_ASSOC);
 
 <form method="POST" action="/app/back/editprofile.php"><br>  <!-- sends the input to the file  (back) editprofile.php  -->
     <div class="form">
-<strong>Old password: </strong> <input type="password" name="password" required><br>
-<strong>New password: </strong> <input type="password" name="password" required><br>
-<strong>New password: </strong> <input type="password" name="password" required><br>
+<strong>Old password: </strong> <input type="password" name="oldpassword" required><br>
+<strong>New password: </strong> <input type="password" name="newpassword" required><br>
+<strong>New password: </strong> <input type="password" name="repeatpassword" required><br>
 <br><button type="submit">Confirm</button>
 </div>
 </form>
