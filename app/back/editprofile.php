@@ -17,6 +17,7 @@ if(isset($_POST['oldpassword']) && isset($_POST['newpassword']) && isset($_POST[
       $getPassword = $pdo->prepare('SELECT * FROM user WHERE userId= :id');
       $getPassword ->bindParam(':id', $_SESSION['userId']);
       $getPassword->execute();
+      $getPassword->fetch(PDO::FETCH_ASSOC);
 
 if(password_verify(password, oldpassword)) {
 
