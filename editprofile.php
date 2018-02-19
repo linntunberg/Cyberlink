@@ -28,7 +28,7 @@ $user = $statement->fetch(PDO::FETCH_ASSOC);
 
 <form method="POST" action="/app/back/editprofile.php"><br>  <!-- sends the input to the file  (back) editprofile.php  -->
     <div class="form">
-<strong>Change bio: </strong> <input type="text" name="username" value="<?php echo $user['username']?>" required><br>
+<strong>Change bio: </strong> <input type="text" name="bio" value="<?php echo $user['biography']?>" required><br>
 <br><button type="submit">Confirm</button>
 </div>
 </form>
