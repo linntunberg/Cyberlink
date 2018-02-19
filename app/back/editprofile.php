@@ -14,6 +14,11 @@ redirect('../../profile.php');
 }
 
 if(isset($_POST['oldpassword']) && isset($_POST['newpassword']) && isset($_POST['repeatpassword'])) {
+
+if(password_verify(password, oldpassword)) {
+
+}
+
   $email = filter_var($_POST['password']);
 
   $statement = $pdo->prepare('UPDATE users SET password =:password WHERE userID = :id');
