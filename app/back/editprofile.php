@@ -19,7 +19,7 @@ if(isset($_POST['oldpassword']) && isset($_POST['newpassword']) && isset($_POST[
       $getPassword->execute();
       $getPassword->fetch(PDO::FETCH_ASSOC); //gets all the information selected and puts it in an array called getPassword, fetch and put in an associative array
 
-if(password_verify($getPassword['password'], $_POST['oldpassword'] && $_POST['Newpassword'] == $_POST['Repeatpassword']))
+if(password_verify($getPassword['password'], $_POST['oldpassword']) && $_POST['Newpassword'] == $_POST['Repeatpassword']){}
 
 redirect('../../profile.php');
 }

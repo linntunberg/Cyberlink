@@ -26,9 +26,10 @@ if (isset($_POST['email'])&& isset($_POST['password'])) {
         // If the password was valid we know that the user exists and provided
         // the correct password. We can now save the user in our session.
         // Remember to not save the password in the session!
-        unset($user['password']);
+
 
         $_SESSION['user'] = $user['userID'];
+        unset($user['password']);
 //redirect if the password is correct
         redirect('../../profile.php');
     }
