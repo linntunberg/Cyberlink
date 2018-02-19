@@ -17,19 +17,12 @@ if(isset($_POST['oldpassword']) && isset($_POST['newpassword']) && isset($_POST[
       $getPassword = $pdo->prepare('SELECT * FROM user WHERE userId= :id');
       $getPassword ->bindParam(':id', $_SESSION['userId']);
       $getPassword->execute();
-      $getPassword->fetch(PDO::FETCH_ASSOC);
-
+      $getPassword->fetch(PDO::FETCH_ASSOC); //gets all the information selected and puts it in an array called getPassword, fetch and put in an associative array
+      $getPassword['password'];
+      $_POST['oldpassword'];
 if(password_verify(password, oldpassword)) {
 
 }
-
-
-  $email = filter_var($_POST['password']);
-
-  $statement = $pdo->prepare('UPDATE users SET password =:password WHERE userID = :id');
-  $statement->bindParam(':id', $_SESSION['user']);
-  $statement->bindParam(':password', $password);
-  $statement->execute();
 
 redirect('../../profile.php');
 }
