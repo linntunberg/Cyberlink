@@ -50,3 +50,9 @@ p {
 body {
   background-color: white;
 }
+
+
+.profileimage {
+  width: 100px;
+  height: 100px;
+}

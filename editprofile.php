@@ -6,7 +6,14 @@ $statement->bindParam(':id', $_SESSION['user']); //user id is same as id, connec
 $statement->execute();
 
 $user = $statement->fetch(PDO::FETCH_ASSOC);
+
 ?>
+
+<br>
+<form action="/app/back/editprofile.php" method="POST" enctype="multipart/form-data">
+   <input type="file" name="file" accept="" required>
+   <button type="submit" name="submit">Upload Profile Image</button>
+   </form>
 
 <h1>Edit Account</h1>
 
@@ -28,9 +35,10 @@ $user = $statement->fetch(PDO::FETCH_ASSOC);
 
 <form method="POST" action="/app/back/editprofile.php"><br>  <!-- sends the input to the file  (back) editprofile.php  -->
     <div class="form">
-<strong>Change bio: </strong> <input type="text" name="bio" value="<?php echo $user['biography']?>" required><br>
+<strong>Change bio: </strong> <input type="text" name="biography" value="<?php echo $user['biography']?>" required><br>
 <br><button type="submit">Confirm</button>
 </div>
 </form>
+
 
 <?php require __DIR__.'/views/footer.php'; ?>
