@@ -10,5 +10,3 @@
 
     <br><button type="submit" id="createlink">Create link</button>
     </form>
-
-    <?php require __DIR__.'/views/footer.php'; ?>
