@@ -13,9 +13,9 @@
 foreach($posts as $post) {
 
     ?><ul>
-        <li>Title: <?php echo $posts['title']?></li>
-        <li>Link: <?php echo $posts['link']?></li>
-        <li>Description: <?php echo $posts['description']?></li>
+        <li>Title: <?php echo $post['title']?></li>
+        <li>Link: <?php echo $post['link']?></li>
+        <li>Description: <?php echo $post['description']?></li>
     </ul>
 <?php
 }
