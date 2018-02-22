@@ -24,5 +24,5 @@ $statement ->bindParam(':userid', $userid);
 
 $statement -> execute();
 
-redirect('../../login.php');
+redirect('../../index.php');
 }
