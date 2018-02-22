@@ -39,6 +39,3 @@ $user = $statement->fetch(PDO::FETCH_ASSOC);
 <br><button type="submit">Confirm</button>
 </div>
 </form>
-
-
-<?php require __DIR__.'/views/footer.php'; ?>

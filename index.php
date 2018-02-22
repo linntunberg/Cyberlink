@@ -8,7 +8,7 @@
     $statement = $pdo->prepare('SELECT * FROM posts WHERE userID = :id');
     $statement->bindParam(':id', $_SESSION['user']); //user id is same as id, connects them.
     $statement->execute();
-    $posts = $statement->fetch(PDO::FETCH_ASSOC);
+    $posts = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 foreach($posts as $post) {
 
