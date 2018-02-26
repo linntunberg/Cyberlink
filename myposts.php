@@ -5,8 +5,6 @@
 
 <h1>My Posts</h1>
 
-<br><button type="submit" id="createlink">Edit link</button>
-
 <?php
 $statement = $pdo->prepare('SELECT * FROM posts WHERE userID = :id');
 if (!$statement) {

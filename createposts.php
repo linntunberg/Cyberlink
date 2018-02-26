@@ -1,5 +1,6 @@
 <?php declare(strict_types=1); ?>
 <?php require __DIR__.'/views/header.php'; ?>
+
 <h1>Post a link</h1>
 
 <form method="POST" action="/app/posts/store.php"><br>

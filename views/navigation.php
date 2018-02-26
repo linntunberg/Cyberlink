@@ -24,9 +24,9 @@
             <a class="nav-link" href="/../createposts.php">Create Post</a>
         </li>
             <a class="nav-link" href="/../myposts.php">My Posts</a>
-        </li>
+
         <?php endif ?>
-        </li><!-- /nav-item -->
+
         <li class="nav-item">
             <?php if (isset($_SESSION['user'])): ?>
                 <a class="nav-link" href="/app/auth/alogout.php">Logout</a>
