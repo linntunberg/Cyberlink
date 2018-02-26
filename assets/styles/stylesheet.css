@@ -20,7 +20,7 @@
 
 h1 {
   font-family: Helvetica;
-  color: red;
+  color: black;
   font-size: 25px;
   text-align: center;
 }
@@ -48,7 +48,7 @@ p {
 }
 
 body {
-  background-color: black;
+  background-color: white;
 }
 
 
@@ -59,4 +59,8 @@ body {
 
 .container py-5 {
   background-color: grey;
+}
+
+.button {
+
 }

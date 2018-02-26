@@ -25,4 +25,5 @@ foreach($posts as $post): ?>
     <li><a href="/app/posts/delete.php?id=<?php echo $post['postID']?>">Delete Post</a></li>
 </ul>
 
+
 <?php endforeach; ?>
