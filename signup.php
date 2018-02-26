@@ -12,5 +12,3 @@
 
 <br><button type="submit" id="createaccount">Create Account</button>
 </form>
-
-<?php require __DIR__.'/views/footer.php'; ?>

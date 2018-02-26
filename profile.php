@@ -8,6 +8,8 @@ require __DIR__.'/views/header.php';
 
  ?>
 
+
+
 <h1>Welcome!</h1>
 
 <img class="profileimage" src="app/<?php echo $user['image_url']?>">

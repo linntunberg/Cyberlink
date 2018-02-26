@@ -30,6 +30,7 @@ $user = $statement->fetch(PDO::FETCH_ASSOC);
 <strong>New password: </strong> <input type="password" name="newpassword" required><br>
 <strong>New password: </strong> <input type="password" name="repeatpassword" required><br>
 <br><button type="submit">Confirm</button>
+
 </div>
 </form>
 

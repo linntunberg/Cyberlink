@@ -22,6 +22,7 @@ if(isset($_POST['oldpassword']) && isset($_POST['newpassword']) && isset($_POST[
 if(password_verify($data['password'], $_POST['oldpassword']) && $_POST['Newpassword'] == $_POST['Repeatpassword'])
 {
     $password = password_hash(filter_var($_POST['Newpassword'], FILTER_SANITIZE_STRING), PASSWORD_DEFAULT);
+
 }
 
 $statement = $pdo->prepare('UPDATE users SET password =:password WHERE userID = :id');

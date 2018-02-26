@@ -17,6 +17,7 @@ if (isset($_POST['email'])&& isset($_POST['password'])) {
     // If we couldn't find the user in the database, redirect back to the login
     // page with our custom redirect function.
     if (!$user) {
+        $_SESSION['message'] = "This email does not exist in the database.";
         redirect('/login.php');
     }
 
@@ -26,8 +27,8 @@ if (isset($_POST['email'])&& isset($_POST['password'])) {
         // If the password was valid we know that the user exists and provided
         // the correct password. We can now save the user in our session.
         // Remember to not save the password in the session!
-
-
+        $_SESSION['authenticated'] = true;
+        $_SESSION['username'] = $user['username'];
         $_SESSION['user'] = $user['userID'];
         unset($user['password']);
 //redirect if the password is correct
