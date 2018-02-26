@@ -20,7 +20,7 @@
 
 h1 {
   font-family: Helvetica;
-  color: black;
+  color: red;
   font-size: 25px;
   text-align: center;
 }
@@ -48,11 +48,15 @@ p {
 }
 
 body {
-  background-color: white;
+  background-color: black;
 }
 
 
 .profileimage {
   width: 300px;
 
+}
+
+.container py-5 {
+  background-color: grey;
 }

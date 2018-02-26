@@ -18,10 +18,11 @@ $posts = $statement->fetchAll(PDO::FETCH_ASSOC);
 foreach($posts as $post): ?>
 
 <ul>
-    <li><a href="/editpost.php?id=<?php echo $post['postID']?>">Edit Post</a></li>
     <li>Title: <?php echo $post['title']?></li>
     <li>Link: <?php echo $post['link']?></li>
     <li>Description: <?php echo $post['description']?></li>
+    <li><a href="/editpost.php?id=<?php echo $post['postID']?>">Edit Post</a></li>
+    <li><a href="/app/posts/delete.php?id=<?php echo $post['postID']?>">Delete Post</a></li>
 </ul>
 
 <?php endforeach; ?>
