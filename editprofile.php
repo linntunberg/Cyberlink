@@ -8,14 +8,14 @@ $statement->execute();
 $user = $statement->fetch(PDO::FETCH_ASSOC);
 
 ?>
-
+<h1>Edit Account</h1>
 <br>
 <form action="/app/back/editprofile.php" method="POST" enctype="multipart/form-data">
    <input type="file" name="file" accept="" required>
    <button type="submit" name="submit">Upload Profile Image</button>
    </form>
 
-<h1>Edit Account</h1>
+
 
 <form method="POST" action="/app/back/editprofile.php"><br>  <!-- sends the input to the file  (back) editprofile.php  -->
     <div class="form">
