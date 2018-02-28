@@ -1,7 +1,7 @@
 # CyberLink
 
 ## Assignment
-- Create a clone of the website <a href="https://www.reddit.com/">reddit</a>
+- Create a Reddit clone.
 
 ### Requirements
 - As a user I should be able to create an account.
@@ -24,16 +24,14 @@
 
 
 ## Installation instructions
-1. Clone or download the repository
-2. Start MAMP
-3. Set root directory to the your cloned repository
-4. Go back to the main menu in MAMP and hit "Start Servers"
-5. Open your browser
-6. Type in localhost and you're ready!
+1. Clone/download the repository.
+2. Open the repository in MAMP.
+3. Open your browser.
+4. Go to localhost.
+5. You're ready to go!
 
+<iframe src="https://giphy.com/embed/i79P9wUfnmPyo" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/i79P9wUfnmPyo">via GIPHY</a></p>
 
 ### Tested by:
 - Albert Norberg
 - Oskar Järviniemi
----
-_Linn Tunberg, 2018_
