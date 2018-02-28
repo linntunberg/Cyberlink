@@ -1,7 +1,5 @@
-<?php declare(strict_types=1); ?>
-<?php require __DIR__.'/views/header.php'; ?>
-
-
+<?php declare(strict_types=1);
+require __DIR__.'/views/header.php'; ?>
 
 <h1>My Posts</h1>
 

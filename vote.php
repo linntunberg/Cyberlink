@@ -1,8 +1,5 @@
 <?php declare(strict_types=1);
-
 require __DIR__.'/app/autoload.php';
-
-// die(var_dump($_POST));
 
 if (isset($_POST['postId'])) {
 
@@ -10,7 +7,6 @@ if (isset($_POST['postId'])) {
  $vote = (int)$_POST['voteDir'];
  $userId = (int)$_POST['userId'];
 }
-
 
 $statement = $pdo->prepare('SELECT COUNT(*) FROM votes WHERE userID = :userId AND postID = :postId');
   if (!$statement) {
@@ -21,11 +17,7 @@ $statement = $pdo->prepare('SELECT COUNT(*) FROM votes WHERE userID = :userId AN
   $statement->execute();
   $voteOnPostInDbCount = $statement->fetch(PDO::FETCH_ASSOC);
 
-  // die(var_dump($getVotesOnPost));
-
   $voteExists = (int)$voteOnPostInDbCount['COUNT(*)'];
-
-  // die(var_dump($votesOnPost));
 
   if ($voteExists === 0) {
 

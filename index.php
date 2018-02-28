@@ -79,7 +79,7 @@ function vote(event) {
            if (confirm('You have to be logged in to vote!')) {
              window.location.href = "login.php";
              } else {
-               // Do nothing!
+
              }
 
            }
