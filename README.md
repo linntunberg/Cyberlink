@@ -31,9 +31,8 @@
 4. Go to localhost.
 5. You're ready to go!
 
+![](https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif)
+
 ### Tested by:
 - Albert Norberg
 - Oskar Järviniemi
-
-
-![](https://media.giphy.com/media/i79P9wUfnmPyo/giphy.gif)
