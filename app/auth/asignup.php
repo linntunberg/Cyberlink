@@ -1,7 +1,5 @@
 <?php declare(strict_types=1);
-
 require __DIR__.'/../autoload.php';
-
 
 if (isset($_POST['username']) && isset($_POST['password'])) //isset is a function, so parenthases. If the username and password is set, it will continue, otherwise not.
 {
@@ -22,7 +20,6 @@ $statement ->bindParam(':avatar', $avatar);
 $statement ->bindParam(':email', $email);
 
 $statement -> execute();
-
 
 redirect('../../login.php');
 }

@@ -20,9 +20,8 @@ $posts = getPostsAllWithUserIdSortByDate($pdo, $userId)
 
     <h1>Welcome to Cyberlink!</h1>
 <?php endif ?>
+
 <?php
-
-
 foreach($posts as $post) {
 
     ?><ul data-post-id="<?php echo $post['postID']?>">

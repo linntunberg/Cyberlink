@@ -1,10 +1,5 @@
-<?php
-
-declare(strict_types=1);
-
+<?php declare(strict_types=1);
 require __DIR__.'/../autoload.php';
-
-// In this file we store/insert new posts in the database.
 
 if (isset($_POST['title']) && isset($_POST['link']) && isset($_POST['description'])) //isset is a function, so parenthases. If the username and password is set, it will continue, otherwise not.
 {
@@ -19,7 +14,7 @@ $vote = 0;
 $statement = $pdo->prepare("INSERT INTO posts(title, link, description, userID, timeOfSub) VALUES (:title, :link, :description, :userID, :timeOfSub)"); //Prepare the database for the information and tell it where to put the information.
 
 $statement ->bindParam(':title', $title); //bind the variable title with the parameter that you send to the database.
-$statement ->bindParam(':link', $link);//same
+$statement ->bindParam(':link', $link);
 $statement ->bindParam(':description', $description);
 $statement ->bindParam(':userID', $userid);
 $statement ->bindParam(':timeOfSub', $timeOfSub);

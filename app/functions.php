@@ -28,10 +28,6 @@ $postsStatement = $pdo->prepare("SELECT posts.*, users.*, votes.*, (SELECT sum(v
 
 }
 
-
-
-
-
 function getPostsAllSortByDate($pdo) {
 
   $postsStatement = $pdo->prepare("SELECT posts.*, users.*, votes.*, (SELECT sum(vote) FROM votes WHERE posts.postID = votes.postID) AS sum, (SELECT count() FROM votes WHERE votes.postID = posts.postID) AS voteCount FROM posts JOIN votes ON posts.postID=votes.postID JOIN users ON posts.userID = users.userID GROUP BY posts.postID ORDER BY timeOfSub DESC");
