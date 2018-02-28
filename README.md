@@ -30,7 +30,7 @@
 4. Go to localhost.
 5. You're ready to go!
 
-<iframe src="https://giphy.com/embed/i79P9wUfnmPyo" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/i79P9wUfnmPyo">via GIPHY</a></p>
+<img src="https://media.giphy.com/media/i79P9wUfnmPyo/giphy.gif">
 
 ### Tested by:
 - Albert Norberg
