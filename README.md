@@ -1,6 +1,8 @@
 
 # CyberLink
 
+![](https://media.giphy.com/media/ihBQKvIE7gLEA/giphy.gif)
+
 ## Assignment
 - Create a Reddit clone.
 
