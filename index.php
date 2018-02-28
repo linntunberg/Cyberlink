@@ -1,9 +1,6 @@
 <?php declare(strict_types=1); ?>
 <?php require __DIR__.'/views/header.php'; ?>
 
-
-
-
 <article>
 <?php
 if(isset($_SESSION['authenticated']) && $_SESSION['authenticated'] == true): ?>
@@ -17,8 +14,10 @@ if(isset($_SESSION['authenticated']) && $_SESSION['authenticated'] == true): ?>
 
 <?php else: ?>
 
-<?php $posts = getPostsAllSortByDate($pdo)
-?>
+    <?php $posts = getPostsAllSortByDate($pdo);
+    $userId = "nouserloggedin";
+    ?>
+
 
     <h1>Welcome to Cyberlink!</h1>
 <?php endif ?>
@@ -29,7 +28,7 @@ foreach($posts as $post) {
 
     ?><ul data-post-id="<?php echo $post['postID']?>">
         <li>Title: <?php echo $post['title']?></li>
-        <li>Link: <?php echo $post['link']?></li>
+        <li>Link: <a href="<?php echo $post['link']?>"><?php echo $post['link']?></a></li>
         <li>Description: <?php echo $post['description']?></li>
         <button class="up" type="button" data-post-id="<?php echo $post['postID']?>" data-user-id="<?php echo $userId?>" data-vote-dir="1" >Upvote</button>
         <button class="down" type="button" data-post-id="<?php echo $post['postID']?>" data-user-id="<?php echo $userId?>" data-vote-dir="-1">Downvote</button>
@@ -44,8 +43,6 @@ foreach($posts as $post) {
 
     const voteLinks = document.querySelectorAll('.up, .down');
 
-    console.log(voteLinks);
-
         voteLinks.forEach(function(link) {
             link.addEventListener('click', vote);
         });
@@ -55,11 +52,7 @@ function vote(event) {
     const voteDir = event.target.dataset.voteDir;
     const userId = event.target.dataset.userId;
 
-    console.log(postId);
-    console.log(voteDir);
-    console.log(userId);
-
-    if (userId){
+    if (userId !== "nouserloggedin"){
 
    const data = `postId=${postId}&voteDir=${voteDir}&userId=${userId}`;
    const url = "vote.php";
@@ -72,8 +65,6 @@ function vote(event) {
 
            .then((res) => res.json())
            .then((data) =>  {
-
-               console.log(data);
 
              const display = document.querySelector(`[data-vote-display-id="${postId}"]`);
              const liked = document.querySelector(`[data-liked="${postId}"]`);

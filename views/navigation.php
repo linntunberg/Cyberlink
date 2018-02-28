@@ -9,10 +9,6 @@
             <a class="nav-link <?php echo $_SERVER['SCRIPT_NAME'] === '/about.php' ? 'active' : ''; ?>" href="/index.php">Home</a>
         </li><!-- /nav-item -->
 
-
-        <li class="nav-item">
-            <a class="nav-link" href="/profile.php">Profile</a>
-        </li><!-- /nav-item -->
         <li class="nav-item">
             <a class="nav-link" href="/signup.php">Sign Up</a>
         </li><!-- /nav-item -->
@@ -20,7 +16,9 @@
         <li class="nav-item">
             <?php
             if(isset($_SESSION['authenticated']) && $_SESSION['authenticated'] == true): ?>
-
+            <li class="nav-item">
+                <a class="nav-link" href="/profile.php">Profile</a>
+            </li><!-- /nav-item -->
             <a class="nav-link" href="/../createposts.php">Create Post</a>
         </li>
             <a class="nav-link" href="/../myposts.php">My Posts</a>
