@@ -26,7 +26,7 @@
 - As a user I should be able to up and down vote links.
 
 
-## Installation instructions
+## Installation
 1. Clone/download the repository.
 2. Open the repository in MAMP.
 3. Open your browser.
