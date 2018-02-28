@@ -1,3 +1,4 @@
+
 # CyberLink
 
 ## Assignment
@@ -34,4 +35,5 @@
 - Albert Norberg
 - Oskar Järviniemi
 
-<img src="https://media.giphy.com/media/i79P9wUfnmPyo/giphy.gif">
+
+![](https://media.giphy.com/media/i79P9wUfnmPyo/giphy.gif)
