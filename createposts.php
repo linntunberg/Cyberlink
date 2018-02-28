@@ -8,6 +8,5 @@
     <br><strong>Link: </strong> <input type="text"  name="link" placeholder="Enter link" id="link" required><br>
     <br><strong>Description: </strong> <input type="text"  name="description" placeholder="Enter description" id="description" required><br>
 
-
     <br><button type="submit" id="createlink">Create link</button>
     </form>

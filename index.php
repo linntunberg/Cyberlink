@@ -1,13 +1,12 @@
-<?php declare(strict_types=1); ?>
-<?php require __DIR__.'/views/header.php'; ?>
+<?php declare(strict_types=1);
+require __DIR__.'/views/header.php'; ?>
 
 <article>
 <?php
-if(isset($_SESSION['authenticated']) && $_SESSION['authenticated'] == true): ?>
-<?php $userId = $_SESSION['user']; ?>
+if(isset($_SESSION['authenticated']) && $_SESSION['authenticated'] == true):
+$userId = $_SESSION['user'];
 
-
-<?php $posts = getPostsAllWithUserIdSortByDate($pdo, $userId)
+$posts = getPostsAllWithUserIdSortByDate($pdo, $userId)
 ?>
 
 <h1><?php echo "Welcome to Cyberlink ".$_SESSION['username']."!"; ?></h1>
@@ -77,7 +76,7 @@ function vote(event) {
 
          } else {
 
-           if (confirm('You have to be logged in to participate in the voting. Press OK if you want to proceed to the login page where you can also sign up for a free account if you have not already!')) {
+           if (confirm('You have to be logged in to vote!')) {
              window.location.href = "login.php";
              } else {
                // Do nothing!
@@ -85,7 +84,5 @@ function vote(event) {
 
            }
          }
-
-
 
 </script>
