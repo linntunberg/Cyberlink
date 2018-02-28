@@ -37,12 +37,6 @@ margin: center;
 
 }
 
-}
-
-.container1 {
-  height: 100%;
-}
-
 p {
     text-align: center;
 }
@@ -51,16 +45,7 @@ body {
   background-color: white;
 }
 
-
 .profileimage {
   width: 300px;
-
-}
-
-.container py-5 {
-  background-color: grey;
-}
-
-.button {
 
 }
